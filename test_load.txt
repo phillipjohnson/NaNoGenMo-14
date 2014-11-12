@@ -1,0 +1,3 @@
+I am hungry.
+You are hungry.
+Hungry people eat food.
