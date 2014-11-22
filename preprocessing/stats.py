@@ -36,7 +36,7 @@ sentence_types['3'] = len(re.findall('\?', full_text))
 total = sum(sentence_types.values())
 sentence_type_probs = {k:(v/total) for k,v in sentence_types.items()}
 
-with open('../probconst.py','w') as f:
+with open('../probconst_out.py','w') as f:
 	f.write('line_lengths = {}\n'.format(str(line_probs)))
 	f.write('sentence_lengths = {}\n'.format(str(sentence_probs)))
 	f.write('sentence_types = {}\n'.format(str(sentence_type_probs)))
